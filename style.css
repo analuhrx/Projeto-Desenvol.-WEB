@@ -67,4 +67,34 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+ 
+  
+  
+  }.img{
+  display: block;
+  margin: auto;
+}
+.container-blocos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  padding: 20px;
+}
+
+.bloco-praia {
+  width: 520px;
+  background-color: #e6f9f0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bloco-praia img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+      
