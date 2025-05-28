@@ -7,121 +7,193 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color:#fef9ef ;
-    color: black;
-  }
-  
-  
-  
-  header {
-    background-color:#005f88;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    flex-wrap: wrap;
-  }
-  
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
-  
-  nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #1aa6d1;
-  }
-  
-  main {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .hero h2 {
-    color: #2ab472;
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  .hero img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-  
-  footer {
-    background-color: #005f88;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-  }
-  
-  .img{
-    display: block;
-    margin: auto;
-  }
-  .container-blocos {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    padding: 20px;
-  }
-  
-  .bloco-praia {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    background-color: #e6f9f0;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .bloco-praia p {
-      text-align: justify;
-  }
-  
-  .bloco-praia img {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    object-fit: cover;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color:#fef9ef ;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/*sem bordas na imagem*/
+main {
+  padding: 0;
+  margin: 0;
+}
+
+
+header {
+  background-color:#005f88;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #1aa6d1;
+}
+
+
+/* Rodape */
+footer {
+  position: relative;
+  background-color: #005f88;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+
+/* pagina lugares*/
+.img{
+  display: block;
+  margin: auto;
+}
+.container-blocos {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+}
+
+.bloco-praia {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #e6f9f0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bloco-praia p {
+    text-align: justify;
+}
+
+.bloco-praia img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+/*----*/
+
+
+/* Pagina Inicio */
+.container-inicio {
+display: grid;
+grid-template-columns: repeat(2, 1fr); 
+gap: 20px;
+max-width: 800px;
+margin: 40px auto;
+}
+
+.bloco {
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+height: 180px; 
+text-align: center;
+padding: 20px;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+transition: transform 0.3s, box-shadow 0.3s;
+}
+/* efeito ao passar mouse*/
+.bloco:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/*imagem*/
+.hero {
+  background-image:url('./img/fortaleza-banner.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+/* sobreposicção imagem */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* escurece a imagem */
+}
+
+/* texto bem-vin */
+.hero-texto {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+
+}
+.hero-texto h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.decorativo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.0rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+  color: #ffffffcc;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+/*--*/
