@@ -152,9 +152,6 @@ padding: 20px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-
-
-
 transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -344,13 +341,13 @@ transition: transform 0.3s, box-shadow 0.3s;
 
 
 
-/* Imagens responsivas */
+/* Imagens responsivas gerais */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* ===== !!RESPONSIVIDADE GERAL!! ===== */
+/* ===== RESPONSIVIDADE GERAL ===== */
 @media (max-width: 768px) {
 
   /* Header responsivo */
@@ -399,6 +396,8 @@ img {
     font-size: 0.95rem; /* Diminui o tamanho do parágrafo */
     line-height: 1.6; /* Espaçamento entre as linhas */
   }
+  
+  
   
   
   /* Container de blocos vira uma coluna*/
