@@ -359,6 +359,11 @@ transition: transform 0.3s, box-shadow 0.3s;
   object-fit: cover;
 }
 
+.bloco2:hover {
+transform: scale(1.03);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
 /*Caixa inicio*/
 .caixa-central {
   position: relative; /* Permite ajuste na posição */
