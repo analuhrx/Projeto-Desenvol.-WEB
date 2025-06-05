@@ -42,13 +42,6 @@ function backSlider(){
     showslider();
 }
 
-
-
-
-
-
-
-
 /* Eventos de clique nos botões*/
 btnnext.addEventListener('click', nextSlider)
 btnback.addEventListener('click', backSlider)
