@@ -91,87 +91,11 @@ footer {
 
 
 
-/* pagina Lugares*/
-
-/* Carrossel */
-.container-slider{
-  display:  flex;
-  width: 100%;
-  min-height: 68vh; /* altura*/
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  
-}
-
-.container-imagens{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 700px;
-
-}
-
-.slider{
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  border-radius:10px;
-  transition: opacity 0.5s;
-  
-}
-
-
-.on{
-  opacity: 1;
-}
-
-#botaoback, #botaonext{
-  width: 49px;
-  height: 40px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-#botaoback img, #botaonext img{
-  width: 100%;
-  height: 100%;
-}
-
-.container-indicadores {
-  display: flex;
-  justify-content: center;
-  margin-top: 420px;
-  gap: 8px;
-  position: absolute;
-}
-
-.indicador {
-  width: 25px;
-  height: 4px;
-  background-color: #727070;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-  opacity: 0.5;
-}
-
-.indicador.ativo {
-  background-color: #ffffff;
-  opacity: 1;
-}
-
-
-
-/*------*/
-
-
+/* pagina lugares*/
 .img{
   display: block;
   margin: auto;
 }
-
 .container-blocos {
   display: flex;
   flex-direction: column;
@@ -359,11 +283,6 @@ transition: transform 0.3s, box-shadow 0.3s;
   object-fit: cover;
 }
 
-.bloco2:hover {
-transform: scale(1.03);
-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
 /*Caixa inicio*/
 .caixa-central {
   position: relative; /* Permite ajuste na posição */
@@ -512,7 +431,9 @@ img {
   }
 }
 
-/*  aqui  para  a PAGINA DE CONTATO */
+/*  aqui  para  a página de Contato */
+
+
 .form-frase {
   font-family: 'Rubik', sans-serif;
   font-size: 1.4rem;
@@ -572,8 +493,5 @@ img {
     width: 90%;
   }
 }
-
-
-
 
 
