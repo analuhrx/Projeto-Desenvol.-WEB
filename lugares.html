@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo em Fortaleza</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turismo em Fortaleza</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="./src/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-<header>
+  <header>
     <div class="logo">
-          <img src="./img/Logo.jpeg" alt="Logo Turistar Fortaleza" />
-          <h1>Turistar Fortaleza</h1>
+      <img src="./img/Logo.jpeg" alt="Logo Turistar Fortaleza" />
+      <h1>Turistar Fortaleza</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="lugares.html">Pontos Turísticos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Carrossel de Imagens -->
+    <div class="container-slider">
+      <!-- Botão para imagem anterior -->
+      <button id="botaoback">
+        <img src="./img/seta_esq.png" alt="Voltar imagem" />
+      </button>
+
+      <!-- Área das imagens -->
+      <div class="container-imagens">
+        <!-- Cada imagem precisa da classe "slider" -->
+        <img src="./img/imagem1carrossel.png" alt="imagem1" class="slider on" />
+        <img src="./img/imagem2carrossel.png" alt="imagem2" class="slider" />
+        <img src="./img/imagem3carrossel.jpg" alt="imagem3" class="slider" />
+        <img src="./img/imagem4carrossel.jpg" alt="imagem4" class="slider" />
+      </div>
+
+      <!-- Botão para próxima imagem -->
+      <button id="botaonext">
+        <img src="./img/seta_dire.png" alt="Próxima imagem" />
+      </button>
+
+      <!-- Indicadores (bolinhas) -->
+      <div class="container-indicadores">
+        <span class="indicador ativo"></span>
+        <span class="indicador"></span>
+        <span class="indicador"></span>
+        <span class="indicador"></span>
+      </div>
     </div>
 
-<nav>
-<ul>
-         <li><a href="index.html">Início</a></li>
-         <li><a href="lugares.html">Pontos Turísticos</a></li>
-         <li><a href="contato.html">Contato</a></li>
-</ul>
-</nav>
-</header>
-<main>
+    <!-- Blocos de praias -->
     <div class="container-blocos">
         <div class="bloco-praia">
         <img class="img" src="https://media.istockphoto.com/id/1188723371/pt/foto/praia-do-futuro-beach-in-fortaleza-ceara-brazil-aerial-view.jpg?s=612x612&w=0&k=20&c=9vH7BgLPgLZHD2mxRw6X2V_qgbpvjsKsA6YXY7Zjsb8=" alt="Praia Do Futuro Fortaleza Imagem">
@@ -37,11 +69,33 @@
            <div class="texto">
            <h3>2°  praia de iracema</h3>
            <p>A Praia de Iracema, na orla urbana de Fortaleza, é uma das principais praias da cidade. Ela tem uma parte aterrada, é muito conhecida por abrigar grandes eventos, fica em uma região próxima do centro da cidade e próxima de casas noturnas. Nessa região ficam pontos de interesse como a Estátua de Iracema, o Espigão, que tem uma vista bonita de Fortaleza, e a Ponte dos Ingleses (atualmente em reforma). </p>
-       </div> 
-       </div>
-       
-</main>
-         
+        </div>
+        </div>
+        <div class="bloco-praia">
+           <img src="https://www.quintoandar.com.br/guias/wp-content/uploads/2022/02/mercado-central-de-fortaleza.jpg" alt="Mercado Central de Fortaleza">
+           <div class="texto">
+           <h3>3° Mercado Central de Fortaleza</h3>
+           <p>A Praia de Iracema, na orla urbana de Fortaleza, é uma das principais praias da cidade. Ela tem uma parte aterrada, é muito conhecida por abrigar grandes eventos, fica em uma região próxima do centro da cidade e próxima de casas noturnas. Nessa região ficam pontos de interesse como a Estátua de Iracema, o Espigão, que tem uma vista bonita de Fortaleza, e a Ponte dos Ingleses (atualmente em reforma). </p>
+        </div> 
+        </div>
+        <div class="bloco-praia">
+           <img src="https://www.praiasdefortaleza.net/wp-content/uploads/2016/08/Parque-do_coco_ceara.jpg" alt="Mercado Central de Fortaleza">
+           <div class="texto">
+           <h3>4° Parque Estadual do Rio Cocó</h3>
+           <p>A Praia de Iracema, na orla urbana de Fortaleza, é uma das principais praias da cidade. Ela tem uma parte aterrada, é muito conhecida por abrigar grandes eventos, fica em uma região próxima do centro da cidade e próxima de casas noturnas. Nessa região ficam pontos de interesse como a Estátua de Iracema, o Espigão, que tem uma vista bonita de Fortaleza, e a Ponte dos Ingleses (atualmente em reforma). </p>
+        </div>
+        </div>
+        <div class="bloco-praia">
+           <img src="https://www.quintoandar.com.br/guias/wp-content/uploads/2022/02/mercado-central-de-fortaleza.jpg" alt="Mercado Central de Fortaleza">
+           <div class="texto">
+           <h3>5° Catedral Metropolitana de Fortaleza</h3>
+           <p>A Praia de Iracema, na orla urbana de Fortaleza, é uma das principais praias da cidade. Ela tem uma parte aterrada, é muito conhecida por abrigar grandes eventos, fica em uma região próxima do centro da cidade e próxima de casas noturnas. Nessa região ficam pontos de interesse como a Estátua de Iracema, o Espigão, que tem uma vista bonita de Fortaleza, e a Ponte dos Ingleses (atualmente em reforma). </p>
 
+
+
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
