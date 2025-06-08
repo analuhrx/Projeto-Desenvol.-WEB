@@ -1,3 +1,15 @@
+// script.js
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('header-scroll');
+    } else {
+      header.classList.remove('header-scroll');
+    }
+});
+
+
+
 /* Selecionando todos os elementos img, img botao*/
 const slider = document.querySelectorAll('.slider');
 const btnback = document.getElementById('botaoback');
@@ -47,6 +59,13 @@ btnnext.addEventListener('click', nextSlider)
 btnback.addEventListener('click', backSlider)
 
 setInterval(nextSlider, 6000);
+
+
+
+  
+
+
+
 
 
 /*-------PAGINA DE CONTATO------*/
@@ -103,3 +122,4 @@ document.getElementById('formContato').addEventListener('submit', function(event
     } 
  
  });
+
