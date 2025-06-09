@@ -754,6 +754,8 @@ img {
   }
 }
 
+
+
 /*SOBRE NÓS*/
 .sobre-nos {
     background-color: #f8f9fa;
@@ -868,3 +870,32 @@ img {
         min-width: 100%;
     }
 }
+
+
+/* teste*/
+
+body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .efeito {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .nota {
+      position: absolute;
+      font-size: 20px;
+      pointer-events: none;
+    }
+
+    /* Efeito 1: Sobe e some */
+    .efeito .nota {
+      animation: subir 1s ease-out forwards;
+    }
+    @keyframes subir {
+      0% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-40px); }
+    }
