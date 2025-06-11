@@ -94,14 +94,27 @@ nav ul li a:hover {
 
 
 /* Rodape */
-footer {
+
+/*footer {
   position: relative;
   background-color: #005f88;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}*/
+
+footer {
+  width: 100vw;                /* largura total da viewport */
+  margin: 0;                   /* remove qualquer margem */
+  padding: 20px 0;             /* padding só vertical */
+  background-color: #005f88;   /* azul */
+  color: white;
+  text-align: center;
+  position: relative;
+  left: 0;
 }
+
 
 
 /* pagina Lugares*/
@@ -498,7 +511,6 @@ transition: transform 0.3s, box-shadow 0.3s;
   grid-template-columns: repeat(2, 1fr); /* Duas colunas */
   gap: 20px;
   padding: 20px;
-  
 }
 
 .card {
@@ -758,7 +770,7 @@ img {
 
 /*SOBRE NÓS*/
 .sobre-nos {
-    background-color: #f8f9fa;
+    background-color: white;
     padding: 60px 0;
     margin: 40px 0;
 }
@@ -872,30 +884,45 @@ img {
 }
 
 
-/* teste*/
 
-body {
-      font-family: sans-serif;
-      padding: 20px;
-    }
+/*card pontos*/
 
-    .efeito {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
+.card-pontos {
+  background-color:transparent;
+  padding: 50px;
+  border-radius: 16px;
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
+}
 
-    .nota {
-      position: absolute;
-      font-size: 20px;
-      pointer-events: none;
-    }
+.card-pontos h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+}
 
-    /* Efeito 1: Sobe e some */
-    .efeito .nota {
-      animation: subir 1s ease-out forwards;
-    }
-    @keyframes subir {
-      0% { opacity: 1; transform: translateY(0); }
-      100% { opacity: 0; transform: translateY(-40px); }
-    }
+.card-pontos p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+
