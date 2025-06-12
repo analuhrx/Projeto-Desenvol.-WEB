@@ -199,7 +199,7 @@ footer {
 }
 
 #botaonext {
-  right: 40px; /* Posiciona à direita */
+  right: 38px; /* Posiciona à direita */
 }
 
 #botaoback img, #botaonext img{
@@ -210,7 +210,7 @@ footer {
 .container-indicadores {
   display: flex;
   justify-content: center;
-  margin-top: 500px;
+  margin-top: 450px;
   gap: 8px;
   position: absolute;
   z-index: 2; /* Garante que os indicadores fiquem sobre a imagem */
@@ -234,7 +234,7 @@ footer {
 .titulo {
   margin: 50px 0 3px 6%;
   color: #005f88; 
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-align: left;
 }
 
@@ -814,7 +814,73 @@ img {
   }
 }
 
+/* Responsividade para lista de cultura */
+@media (max-width: 768px) {
+  .lista-cultura {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+  }
 
+  .lista-cultura li {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Responsividade para cards de entretenimento */
+@media (max-width: 1024px) {
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* Responsividade para seção Quem Somos */
+@media (max-width: 992px) {
+  .sobre-conteudo {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-texto,
+  .sobre-imagem {
+    width: 100%;
+  }
+
+  .sobre-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .container-sobre {
+    padding: 0 1rem;
+  }
+}
 
 /*SOBRE NÓS*/
 .sobre-nos {
