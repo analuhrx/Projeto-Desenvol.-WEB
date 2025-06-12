@@ -12,6 +12,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+.rodape {
+  background-color: #005b84;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Espaço entre o aviso e o contato */
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.link-contato {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.link-contato:hover {
+  color:#c0ebff ;
+  text-decoration: none;
+}
 
 
 body {
@@ -105,11 +131,9 @@ footer {
 
 
 
-
-
-
-
-/* pagina Lugares*/
+/*--------------------------------------*/
+/* PAGINA LUGARES*/
+/*--------------------------------------*/
 .main-lugares {
   padding: 0;
   margin: 0;
@@ -127,26 +151,11 @@ footer {
 }
 
 
-
 .container-imagens {
   position: relative;
   width: 100%; /* Faz a imagem ocupar toda a largura */
   height: 70vh; /* Ajuste a altura para ter um espaço adequado */
 }
-
-/*
-- degradê preto imagem - pode deixar comentado -
-.container-imagens::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 270px; 
-  background: linear-gradient(to top,#000000a8, transparent); 
-  z-index: 1;
-}
-*/
 
 
 .slider {
@@ -161,9 +170,11 @@ footer {
 
 
 /*altura de corte da img*/
-#imgteste4{
+#img4{
   object-position: center 10%;
-  
+}
+#img5{
+  object-position: center 10%;
 }
 
 
@@ -188,7 +199,7 @@ footer {
 }
 
 #botaonext {
-  right: 40px; /* Posiciona à direita */
+  right: 38px; /* Posiciona à direita */
 }
 
 #botaoback img, #botaonext img{
@@ -199,7 +210,7 @@ footer {
 .container-indicadores {
   display: flex;
   justify-content: center;
-  margin-top: 480px;
+  margin-top: 452px;
   gap: 8px;
   position: absolute;
   z-index: 2; /* Garante que os indicadores fiquem sobre a imagem */
@@ -223,7 +234,7 @@ footer {
 .titulo {
   margin: 50px 0 3px 6%;
   color: #005f88; 
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   text-align: left;
 }
 
@@ -236,7 +247,7 @@ footer {
   flex-direction: column;
   gap: 40px;  /* Espaço entre os cards */
   padding: 40px 20px;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -286,18 +297,18 @@ footer {
 
 .card-info h2 {
   margin: 0 0 10px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #005f88;
 }
 
 .card-info .tags {
-  font-size: 0.80rem;
+  font-size: 0.95rem;
   color: #2ab472;
   margin-bottom: 10px;
 }
 
 .card-info p {
-  font-size: 1.0rem;
+  font-size: 1.1rem;
   color: #333;
   text-align: justify;
   line-height: 1.6;
@@ -339,9 +350,8 @@ footer {
 
 
 /*--------------------------------------*/
-
-
-/* Pagina Inicio */
+/* PAGINA INICIO */
+/*--------------------------------------*/
 
 /*blocos inicio*/
 .container-inicio {
@@ -353,26 +363,90 @@ margin: 40px auto;
 width:90%;  /* adicionado para responsividade */
 }
 
-/*blocos conf*/
-.bloco {
-background-color: #fff;
-border: 1px solid #ccc;
-border-radius: 12px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-height: 180px; 
-text-align: center;
-padding: 20px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-transition: transform 0.3s, box-shadow 0.3s;
+/*cultura pagina INICIO conf*/
+.lista-cultura {
+  list-style: none;
+  padding: 0;
+  margin: 1.6rem 0;
+  font-family: 'Poppins', sans-serif;
+  margin:16px 90px;
+  gap: 10px;
+  padding-bottom: 5px;
 }
 
+.lista-cultura li {
+  background-color: #ebfcfd;
+  border-left: 5px solid #2ab472;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 1rem;
+}
 
-/* efeito ao passar mouse*/
-.bloco:hover {
-transform: scale(1.03);
-box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+/*cads entreterimento*/
+.entretenimento {
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.entretenimento h2 {
+  font-size: 2.0rem;
+  color: #005f88;
+  margin-bottom: 10px;
+}
+
+.entretenimento .descricao {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas fixas */
+  gap: 25px;
+  padding: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column ;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  color: #005f88;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card .card-body .card-text {
+  font-size: 1.0rem;
 }
 
 
@@ -497,116 +571,82 @@ transition: transform 0.3s, box-shadow 0.3s;
   object-fit: cover;
 }
 
-/*teste*/
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-  gap: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 300px; /* Altura mínima ajustada */
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
-}
-
-.card-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.card-text {
-  font-size: 1rem;
-  color: #555;
-}
-
-
-
-
-
-
 /*Caixa inicio*/
 .caixa-central {
   position: relative; /* Permite ajuste na posição */
   background-color: #ffffff;
-  border: 1px solid #ddd;
+  border: 1px solid #ffffff;
   border-radius: 12px;  /* bordas arredondadas */
   padding: 40px;
+  padding-bottom: 100px; /* Espaço extra para o texto */
   margin: 30px auto; /* Margem externa */
-  max-width: 999px; /* LARGURA MÁXIMA da caixa */
+  max-width: 1100px; /* LARGURA MÁXIMA da caixa */
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  
   font-family: Arial, sans-serif;
   color: #222;
   z-index: 10;  /*sobrepor a imagem */
   top: -120px; /* Sobe a caixa (valores negativos = sobe; positivos = desce) */
+  margin: 30px auto -129px auto; /* Margem inferior negativa */
+  
 }
-
-
 
 /* text e paragrafo da caixa central */
 .caixa-central h2 {
-  font-size: 30px;  /* Tamanho menor que o padrão */
+  font-size: 32px;  /* Tamanho menor que o padrão */
   margin-bottom: 10px;
+  margin-left: 5px;
+  text-align: left;
 }
 .caixa-central p {
   font-size: 20px;  /* Um pouco menor que 1rem */
   line-height: 1.9;   /* Espaçamento entre linhas */
   margin-bottom: 10px;
+  text-align:justify;
 }
-/*---*/
 
-
-
-
-/* !! Por enquanto !!*/
-/* blocos lit, cult, mus, culi,*/
-.container-inicio p{
-  font-size: 16px;  /* Um pouco menor que 1rem */
-  line-height: 1.4;   /* Espaçamento entre linhas */
+/*card pontos*/
+.card-pontos {
+  background-color:transparent;
+  padding: 50px;
+  border-radius: 16px;
+  text-align: left;
+  max-width: 900px;
+  padding: 20px;
+  margin: 23px 23px;
+  }
+  
+  .card-pontos h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
   margin-bottom: 10px;
-}
-
-.container-inicio h3{
-  font-size: 23px; /* Título um pouco maior */
-  margin-bottom: 10px;
-}
-/*---------!!-----------*/
-
-
-
-
-
-
-
+  
+  }
+  
+  .card-pontos p {
+  font-size: 17.6px;
+  color: #333;
+  margin-bottom: 14px;
+  }
+  
+  .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn:hover {
+  background-color: #000;
+  color: white;
+  }
+  
+/*----------------*/
 
 
 
@@ -667,7 +707,18 @@ img {
     line-height: 1.6; /* Espaçamento entre as linhas */
   }
   
-  
+  /*cads entretenimento*/ 
+  .entretenimento h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
   
   
   /* Container de blocos vira uma coluna*/
@@ -699,9 +750,71 @@ img {
     padding: 15px;
     font-size: 0.9rem;
   }
+
+  
+}
+/* Responsividade para lista de cultura */
+@media (max-width: 768px) {
+  .lista-cultura {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+  }
+
+  .lista-cultura li {
+    margin-bottom: 1rem;
+  }
 }
 
+/* Responsividade para cards de entretenimento */
+@media (max-width: 1024px) {
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* Responsividade para seção Quem Somos */
+@media (max-width: 992px) {
+  .sobre-conteudo {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-texto,
+  .sobre-imagem {
+    width: 100%;
+  }
+}
+
+
+/*--------------------------------------*/
 /*  aqui  para  a PAGINA DE CONTATO */
+/*--------------------------------------*/
 .form-frase {
   font-family: 'Rubik', sans-serif;
   font-size: 1.4rem;
@@ -761,6 +874,130 @@ img {
     width: 90%;
   }
 }
+
+
+
+/*SOBRE NÓS*/
+.sobre-nos {
+  background-color: white;
+  padding: 70px 0;
+  margin: 0;
+  margin-bottom: -40px;	
+  
+}
+
+
+.container-sobre {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 560 20px;
+  
+}
+
+.sobre-nos h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  margin-top: -20px;
+}
+
+.sobre-nos h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0066cc;
+  margin: 15px auto;
+}
+
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 85px;
+  flex-wrap: wrap;
+}
+
+.sobre-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sobre-texto p {
+  font-family: 'Rubik', sans-serif;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.sobre-texto ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.sobre-texto li {
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  position: relative;
+  padding-left: 30px;
+}
+
+.sobre-texto li::before {
+  content: '✓';
+  color: #0066cc;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.sobre-imagem {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.botao-sobre {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.botao-sobre:hover {
+  background: #0055aa;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsividade sobre nós */
+@media (max-width: 768px) {
+  .sobre-conteudo {
+      flex-direction: column;
+  }
+  
+  .sobre-texto, .sobre-imagem {
+      min-width: 100%;
+  }
+}
+
+
 
 
 

@@ -62,11 +62,6 @@ setInterval(nextSlider, 6000);
 
 
 
-  
-
-
-
-
 
 /*-------PAGINA DE CONTATO------*/
 document.getElementById('formContato').addEventListener('submit', function(evento) {
