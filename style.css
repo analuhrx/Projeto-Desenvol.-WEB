@@ -120,13 +120,25 @@ nav ul li a:hover {
 
 
 /* Rodape */
-footer {
+
+/*footer {
   position: relative;
   background-color: #005f88;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}*/
+
+footer {
+  width: 100vw;                /* largura total da viewport */
+  margin: 0;                   /* remove qualquer margem */
+  padding: 20px 0;             /* padding só vertical */
+  background-color: #005f88;   /* azul */
+  color: white;
+  text-align: center;
+  position: relative;
+  left: 0;
 }
 
 
@@ -134,6 +146,7 @@ footer {
 /*--------------------------------------*/
 /* PAGINA LUGARES*/
 /*--------------------------------------*/
+/* pagina Lugares*/
 .main-lugares {
   padding: 0;
   margin: 0;
@@ -571,6 +584,58 @@ transition: transform 0.3s, box-shadow 0.3s;
   object-fit: cover;
 }
 
+/*teste*/
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px; /* Altura mínima ajustada */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+
+
+
 /*Caixa inicio*/
 .caixa-central {
   position: relative; /* Permite ajuste na posição */
@@ -984,6 +1049,106 @@ img {
   background: #0055aa;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background-color: white;
+    padding: 60px 0;
+    margin: 40px 0;
+}
+
+.container-sobre {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sobre-nos h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.sobre-nos h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #0066cc;
+    margin: 15px auto;
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 85px;
+    flex-wrap: wrap;
+}
+
+.sobre-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-texto p {
+    font-family: 'Rubik', sans-serif;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.sobre-texto ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.sobre-texto li {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    position: relative;
+    padding-left: 30px;
+}
+
+.sobre-texto li::before {
+    content: '✓';
+    color: #0066cc;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.sobre-imagem {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.botao-sobre {
+    display: inline-block;
+    background: #0066cc;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.botao-sobre:hover {
+    background: #0055aa;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Responsividade sobre nós */
@@ -995,11 +1160,52 @@ img {
   .sobre-texto, .sobre-imagem {
       min-width: 100%;
   }
+    .sobre-conteudo {
+        flex-direction: column;
+    }
+    
+    .sobre-texto, .sobre-imagem {
+        min-width: 100%;
+    }
 }
 
+/*card pontos*/
+.card-pontos {
+  background-color:transparent;
+  padding: 50px;
+  border-radius: 16px;
+  text-align: left;
+  max-width: 900px;
+  margin: auto;
+}
 
+.card-pontos h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+}
 
+.card-pontos p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 24px;
+}
 
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+.btn:hover {
+  background-color: #000;
+  color: white;
+}
 
 

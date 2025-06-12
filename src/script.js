@@ -118,3 +118,20 @@ document.getElementById('formContato').addEventListener('submit', function(event
  
  });
 
+//botão
+function criarNota(e, simbolos) {
+      const nota = document.createElement('div');
+      nota.classList.add('nota');
+      nota.innerText = simbolos[Math.floor(Math.random() * simbolos.length)];
+
+      const alvo = e.currentTarget;
+      const rect = alvo.getBoundingClientRect();
+      nota.style.left = (e.clientX - rect.left) + 'px';
+      nota.style.top = (e.clientY - rect.top) + 'px';
+
+      alvo.appendChild(nota);
+
+      setTimeout(() => {
+        nota.remove();
+      }, 1000);
+    }
